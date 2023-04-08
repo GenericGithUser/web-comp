@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Average Calculator and More...</h1>
+    </div>
+    <div class="cont">
+    <form class="contt">
+        <h2>Instructions: Input the Numbers you want to get the average of. 
+            Use spaces to seperate them. 
+        </h2>
+        <input type="text" name="num" id="num"><br>
+        <input type="button" value="Submit" onclick="avmxmn()" id="btn">
+        <input type="button" value="Clear" onclick="window.location.reload()" id="clr">
+    </form>
+    <div class="cont2">
+        <h2>Here's what you've inputted</h2>
+        <h2>
+            <span id="nua" class="emp"></span>
+        
+        </h2>
+        <div class="ans">  
+            <h2>Here's the answers</h2>
+            <h3>Average:
+                <span id="avg" class="emp">
+
+                </span>
+            </h3>
+            <h3>Highest Number or Max:
+                <span id="mx" class="emp">
+
+                </span>
+            </h3><h3>Lowest Number or Min:
+                <span id="mn" class="emp">
+
+                </span>
+            </h3>
+        </div>
+    </div>
+    </div>
+   
+</body>
+    <script src="script.js"></script>
+</html>

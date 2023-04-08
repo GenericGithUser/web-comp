@@ -1,0 +1,25 @@
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background: lightgreen;
+}
+.header{
+	border: 5px solid brown;
+	background-color: lightcoral ;
+	padding: 10px;
+	text-align: center;
+}
+.main{
+	border: 5px solid brown;
+	text-align: center;
+	background-color:lightcoral ;
+	padding: 20px;
+	margin-top: 10px;
+}
+.emp{
+	color: red;
+	text-decoration: underline;
+	font-weight: 900;
+}

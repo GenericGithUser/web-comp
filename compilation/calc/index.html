@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Calculatorer</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	document.write('<div class="header"><h1>Calculator</h1></div>');
+	let num1 = prompt("Enter First Number");
+	let opr = prompt("Enter an Operator (+,-,*,/,%)");
+	let num2 = prompt("Enter Second Number");
+	let add = parseInt(num1) + parseInt(num2);
+	let subt = parseInt(num1) - parseInt(num2);
+	let mul = parseInt(num1) * parseInt(num2);
+	let divi = parseInt(num1) / parseInt(num2);
+	let mod = parseInt(num1) % parseInt(num2);
+
+
+	if(opr == "+"){
+		document.write('<div class="main"> ' +num1 +' + ' +num2 +' is equal to ' +'<span class="emp">' +add +'</span>' +'</div>');
+	}
+	else if(opr == "-"){
+		document.write('<div class="main"> ' +num1 +' - ' +num2 +' is equal to ' +'<span class="emp">' +subt +'</span>' +'</div>');
+	}
+	
+	else if(opr == "*"){
+		document.write('<div class="main">'+num1 +' * ' +num2 +' is equal to ' +'<span class="emp">' +mul +'</span>' +'</div>');
+	}
+	
+	else if(opr == "/"){
+		document.write('<div class="main">' +num1 +' / ' +num2 +' is equal to ' +'<span class="emp">' +divi +'</span>' +'</div>');
+	}
+	
+	else if(opr == "%"){
+		document.write('<div class="main">' +num1 +' % '  +num2 +' is equal to ' +'<span class="emp">' +mod +'</span>' +'</div>');
+	}
+	else{
+		document.write('<div class="error">'+'Invalid Operator' +'<br>')
+		document.write('Please use the following operators' +'<span class="emp">  +, -, *, /, %' +'</span>'+'</div>')
+
+	}
+	
+</script>
+</html>
